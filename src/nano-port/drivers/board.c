@@ -37,7 +37,9 @@ void SystemClock_Config(void)
     RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV1;
     RCC_OscInitStruct.PLL.PLLN = 8;
     RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
+#if defined(RCC_PLLQ_SUPPORT)
     RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV2;
+#endif
     RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
     if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
     {
@@ -76,7 +78,9 @@ void system_clock_config(int target_freq_Mhz)
     RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV1;
     RCC_OscInitStruct.PLL.PLLN = 8;
     RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
+#if defined(RCC_PLLQ_SUPPORT)
     RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV2;
+#endif
     RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
     if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
     {
