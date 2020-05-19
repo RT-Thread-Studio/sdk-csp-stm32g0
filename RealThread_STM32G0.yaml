@@ -217,7 +217,7 @@ series:
           files: []
     ui:
       uart:
-        default_value: UART1
+        default_value: UART2
         prompt_message_en: select one uart as console output interface
         prompt_message_zh: 选择一个串口作为控制台信息输出接口
       tx_pin:
@@ -972,7 +972,7 @@ series:
           files: []
     ui:
       uart:
-        default_value: UART1
+        default_value: UART2
         prompt_message_en: select one uart as console output interface
         prompt_message_zh: 选择一个串口作为控制台信息输出接口
       tx_pin:
@@ -1503,7 +1503,7 @@ series:
           files: []
     ui:
       uart:
-        default_value: UART1
+        default_value: UART2
         prompt_message_en: select one uart as console output interface
         prompt_message_zh: 选择一个串口作为控制台信息输出接口
       tx_pin:
@@ -1682,7 +1682,7 @@ series:
           files: []
     ui:
       uart:
-        default_value: UART1
+        default_value: UART2
         prompt_message_en: select one uart as console output interface
         prompt_message_zh: 选择一个串口作为控制台信息输出接口
       tx_pin:
@@ -2599,7 +2599,7 @@ series:
           files: []
     ui:
       uart:
-        default_value: UART1
+        default_value: UART2
         prompt_message_en: select one uart as console output interface
         prompt_message_zh: 选择一个串口作为控制台信息输出接口
       tx_pin:
@@ -3036,7 +3036,7 @@ series:
           files: []
     ui:
       uart:
-        default_value: UART1
+        default_value: UART2
         prompt_message_en: select one uart as console output interface
         prompt_message_zh: 选择一个串口作为控制台信息输出接口
       tx_pin:
