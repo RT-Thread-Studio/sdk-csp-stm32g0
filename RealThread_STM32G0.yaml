@@ -17,7 +17,7 @@ series:
            - 14 timers (two 112 MHz capable): 16-bit for advanced motor control, one 32-bit and five 16-bit general-purpose, two basic 16-bit, two lowpower 16-bit, two watchdogs, SysTick timer
            - Calendar RTC with alarm and periodic wakeup from Stop/Standby
            - 96-bit unique ID
-  series_name: RealThread_STM32G0xx
+  series_name: STM32G0
   peripheral: {}
   sub_series:
   - sub_series_name: STM32G030
