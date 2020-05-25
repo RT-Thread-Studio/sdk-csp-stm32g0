@@ -2,7 +2,7 @@
 vendor: RealThread
 dvendor: STMicroelectronics
 name: STM32G0
-version: 0.1.6
+version: 0.1.7
 yaml_version: 1
 type: Chip_Support_Packages
 family_name: STM32
@@ -245,7 +245,7 @@ series:
         - STM32G030xx
         files:
         - libraries\CMSIS\Device\ST\STM32G0xx\Source\Templates\gcc\startup_stm32g030xx.S
-        - libraries\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h
+        - libraries\CMSIS\Device\ST\STM32G0xx\Include\stm32g030xx.h
         - libraries\CMSIS\Lib\GCC
       armcc:
         entry_point: none
@@ -1000,7 +1000,7 @@ series:
         - STM32G031xx
         files:
         - libraries\CMSIS\Device\ST\STM32G0xx\Source\Templates\gcc\startup_stm32g031xx.S
-        - libraries\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h
+        - libraries\CMSIS\Device\ST\STM32G0xx\Include\stm32g031xx.h
         - libraries\CMSIS\Lib\GCC
       armcc:
         entry_point: none
@@ -1531,7 +1531,7 @@ series:
         - STM32G041xx
         files:
         - libraries\CMSIS\Device\ST\STM32G0xx\Source\Templates\gcc\startup_stm32g041xx.S
-        - libraries\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h
+        - libraries\CMSIS\Device\ST\STM32G0xx\Include\stm32g041xx.h
         - libraries\CMSIS\Lib\GCC
       armcc:
         entry_point: none
@@ -1712,7 +1712,7 @@ series:
         - STM32G070xx
         files:
         - libraries\CMSIS\Device\ST\STM32G0xx\Source\Templates\gcc\startup_stm32g070xx.S
-        - libraries\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h
+        - libraries\CMSIS\Device\ST\STM32G0xx\Include\stm32g070xx.h
         - libraries\CMSIS\Lib\GCC
       armcc:
         entry_point: none
@@ -2629,7 +2629,7 @@ series:
         - STM32G071xx
         files:
         - libraries\CMSIS\Device\ST\STM32G0xx\Source\Templates\gcc\startup_stm32g071xx.S
-        - libraries\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h
+        - libraries\CMSIS\Device\ST\STM32G0xx\Include\stm32g071xx.h
         - libraries\CMSIS\Lib\GCC
       armcc:
         entry_point: none
@@ -3066,7 +3066,7 @@ series:
         - STM32G081xx
         files:
         - libraries\CMSIS\Device\ST\STM32G0xx\Source\Templates\gcc\startup_stm32g081xx.S
-        - libraries\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h
+        - libraries\CMSIS\Device\ST\STM32G0xx\Include\stm32g081xx.h
         - libraries\CMSIS\Lib\GCC
       armcc:
         entry_point: none
@@ -3125,7 +3125,8 @@ series:
     - libraries\STM32G0xx_HAL_Driver
     - libraries\CMSIS\Include
     - libraries\CMSIS\RTOS
-    - libraries\CMSIS\Device\ST\STM32G0xx\Include
+    - libraries\CMSIS\Device\ST\STM32G0xx\Include\stm32g0xx.h
+    - libraries\CMSIS\Device\ST\STM32G0xx\Include\system_stm32g0xx.h
     - libraries\CMSIS\Device\ST\STM32G0xx\Source\Templates\system_stm32g0xx.c
   cpu_info:
     max_clock: '64000000'
