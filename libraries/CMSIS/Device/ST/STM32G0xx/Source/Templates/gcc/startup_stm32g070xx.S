@@ -94,10 +94,11 @@ LoopFillZerobss:
   cmp r2, r4
   bcc FillZerobss
 
-/* Call static constructors */
-  bl __libc_init_array
-/* Call the application s entry point.*/
-  bl entry
+/* Call the clock system intitialization function.*/
+  bl  SystemInit
+/* Call the application's entry point.*/
+  bl  entry
+  bx  lr
 
 LoopForever:
   b LoopForever
@@ -280,6 +281,3 @@ g_pfnVectors:
 
   .weak      USART3_4_IRQHandler
   .thumb_set USART3_4_IRQHandler,Default_Handler
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
-

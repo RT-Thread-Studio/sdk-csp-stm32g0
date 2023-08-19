@@ -522,7 +522,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <name>PNB</name>
               <description>Page number</description>
               <bitOffset>3</bitOffset>
-              <bitWidth>6</bitWidth>
+              <bitWidth>10</bitWidth>
             </field>
             <field>
               <name>STRT</name>
